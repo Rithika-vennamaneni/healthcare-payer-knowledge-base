@@ -1,14 +1,13 @@
-# 🏥 Healthcare Payer Knowledge Base
+#  Healthcare Payer Knowledge Base
 
 **Automated Healthcare Payer Rule Extraction System**
 
-[![Python](https://img.shields.io/badge/Python-3.8+-blue)](https://python.org) [![License](https://img.shields.io/badge/License-MIT-green)](LICENSE) [![Selenium](https://img.shields.io/badge/Selenium-4.15-orange)](https://selenium.dev)
 
 > Intelligent web crawler that automatically extracts payer rules, filing requirements, and policies from major healthcare insurance portals, converting unstructured information into structured knowledge for revenue cycle teams.
 
 ---
 
-## 🎯 **Project Overview**
+##  **Project Overview**
 
 ### **Problem Statement**
 Healthcare revenue cycle teams face significant challenges:
@@ -28,29 +27,29 @@ Our automated payer portal crawler:
 
 ---
 
-## 🏗️ **System Architecture**
+##  **System Architecture**
 
 ```
 ┌─────────────────────────────────────────────────────────┐
 │                Healthcare Knowledge Base                │
 ├─────────────────────────────────────────────────────────┤
-│  🌐 Web Crawler (Selenium)                            │
+│   Web Crawler (Selenium)                            │
 │     ├── Dynamic content handling                       │
 │     ├── Multi-payer portal navigation                  │
 │     └── Respectful crawling with rate limits           │
 │                                                         │
-│  📄 PDF Processor (PyMuPDF + PyPDF2)                  │
+│   PDF Processor (PyMuPDF + PyPDF2)                  │
 │     ├── Dual extraction methods                        │
 │     ├── Fallback processing                            │
 │     └── Content validation                             │
 │                                                         │
-│  🧠 Rule Extraction Engine                            │
+│   Rule Extraction Engine                            │
 │     ├── Regex pattern matching                         │
 │     ├── Content classification                         │
 │     ├── Geographic zone detection                      │
 │     └── JSON structure generation                      │
 │                                                         │
-│  💾 Knowledge Base                                     │
+│   Knowledge Base                                     │
 │     ├── Structured JSON output                         │
 │     ├── Queryable format                               │
 │     └── API-ready data                                 │
@@ -60,7 +59,7 @@ Our automated payer portal crawler:
 ---
 
 
-## 📄 **License**
+##  **License**
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
