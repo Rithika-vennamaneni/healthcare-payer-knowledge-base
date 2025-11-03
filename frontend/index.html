@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthcare Payer Knowledge Base</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <h1> Healthcare Payer Knowledge Base</h1>
+                <p class="subtitle">AI-Powered Chatbot for Payer Rules & Regulations</p>
+            </div>
+            <div class="status-indicator" id="statusIndicator">
+                <span class="status-dot"></span>
+                <span class="status-text">Connecting...</span>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Sidebar -->
+            <aside class="sidebar">
+                <div class="sidebar-section">
+                    <h3> System Stats</h3>
+                    <div class="stats-grid" id="statsGrid">
+                        <div class="stat-card">
+                            <div class="stat-value">-</div>
+                            <div class="stat-label">Total Payers</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-value">-</div>
+                            <div class="stat-label">Total Rules</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-value">-</div>
+                            <div class="stat-label">Unread Alerts</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sidebar-section">
+                    <h3> Payers</h3>
+                    <div class="payers-list" id="payersList">
+                        <div class="loading">Loading payers...</div>
+                    </div>
+                </div>
+
+                <div class="sidebar-section">
+                    <h3> Recent Alerts</h3>
+                    <div class="alerts-list" id="alertsList">
+                        <div class="loading">Loading alerts...</div>
+                    </div>
+                </div>
+            </aside>
+
+            <!-- Chat Area -->
+            <main class="chat-container">
+                <div class="chat-header">
+                    <h2> Ask About Payer Rules</h2>
+                    <button class="btn-clear" id="clearChat">Clear Chat</button>
+                </div>
+
+                <div class="chat-messages" id="chatMessages">
+                    <div class="welcome-message">
+                        <h3> Welcome!</h3>
+                        <p>Ask me anything about healthcare payer rules, such as:</p>
+                        <ul>
+                            <li>"What is Aetna's timely filing rule?"</li>
+                            <li>"Tell me about prior authorization requirements"</li>
+                            <li>"What are the appeals processes for United Healthcare?"</li>
+                            <li>"Compare timely filing rules across payers"</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="chat-input-container">
+                    <div class="filter-options">
+                        <select id="payerFilter" class="filter-select">
+                            <option value="">All Payers</option>
+                        </select>
+                        <select id="ruleTypeFilter" class="filter-select">
+                            <option value="">All Rule Types</option>
+                            <option value="prior_authorization">Prior Authorization</option>
+                            <option value="timely_filing">Timely Filing</option>
+                            <option value="appeals">Appeals</option>
+                            <option value="claim_submission">Claim Submission</option>
+                            <option value="coverage_policy">Coverage Policy</option>
+                        </select>
+                    </div>
+                    <div class="input-wrapper">
+                        <textarea 
+                            id="chatInput" 
+                            placeholder="Type your question here..." 
+                            rows="1"
+                        ></textarea>
+                        <button id="sendButton" class="btn-send">
+                            <span>Send</span>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

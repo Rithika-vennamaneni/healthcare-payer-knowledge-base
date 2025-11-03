@@ -22,7 +22,7 @@ python-dateutil==2.8.2
 # Logging and Configuration
 python-dotenv==1.0.0
 
-# Database (for future integration)
+# Database
 psycopg2-binary==2.9.7
 sqlalchemy==2.0.23
 
@@ -55,5 +55,20 @@ concurrent-futures==3.1.1
 pytest==7.4.3
 pytest-cov==4.1.0
 
-# Chrome WebDriver (will be auto-managed by webdriver-manager)
-# chromedriver-binary==117.0.5938.149.0
+# FastAPI and Web Server
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+python-multipart==0.0.6
+
+# Scheduler
+APScheduler==3.10.4
+
+# AI/ML - Embeddings and LLM
+openai==1.3.0
+anthropic==0.7.0
+groq==0.33.0
+sentence-transformers==2.2.2
+torch==2.1.0
+
+# Vector Operations
+scikit-learn==1.3.2
